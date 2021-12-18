@@ -86,8 +86,7 @@ const PanelFooter: React.FC<Props> = ({
         ) : (
           <Skeleton width={80} height={24} />
         )}
-        <Flex>
-          {socials.map((social, index) => {
+         {socials.map((social, index) => {
             const Icon = Icons[social.icon];
             const iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
             const mr = index < socials.length - 1 ? "8px" : 0;
@@ -98,7 +97,6 @@ const PanelFooter: React.FC<Props> = ({
               </Link>
             );
           })}
-        </Flex>
       </SocialEntry>
       <SettingsEntry>
         {/* <Button variant="text" onClick={() => toggleTheme(!isDark)}> */}
