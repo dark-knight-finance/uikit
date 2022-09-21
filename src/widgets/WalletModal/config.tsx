@@ -5,12 +5,18 @@ import TrustWallet from "./icons/TrustWallet";
 import WalletConnect from "./icons/WalletConnect";
 import BinanceChain from "./icons/BinanceChain";
 import { Config } from "./types";
+import CoinbaseWallet from "./icons/CoinbaseWallet";
 
 const connectors: Config[] = [
   {
     title: "Metamask",
     icon: Metamask,
     connectorId: "injected",
+  },
+  {
+    title: "CoinBase",
+    icon: CoinbaseWallet,
+    connectorId: "coinbase",
   },
   {
     title: "TrustWallet",

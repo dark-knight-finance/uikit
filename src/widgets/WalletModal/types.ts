@@ -11,6 +11,8 @@ export type ConnectorId =
   | "torus"
   | "walletconnect"
   | "walletlink"
+  | "coinbase"
+
   | "bsc";
 
 export type Login = (connectorId: ConnectorId) => void;
